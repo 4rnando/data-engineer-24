@@ -6,7 +6,7 @@ Replace this with a few sentences on the business process you are modeling.
 
 ## Fact Table
 
-| Column Name | Type | Description |
+| Invoice | Type | Membership Purchase Factsheet |
 | --- | --- | --- |
 | example | varchar | some text here |
 
