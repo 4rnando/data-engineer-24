@@ -2,72 +2,72 @@
 
 ## Business Process Description
 
-An overview of processes involved when an Invoice of a Membership Purchase has been made through the 'Approach' enterprise system.
+An overview of processes involved when an Invoice of a Membership Purchase has been generated through the 'Approach' enterprise system after a payment has been made in-person.
 
 ## Fact Table
 
 | Invoice | Type | Description |
 | --- | --- | --- |
-| Invoice_ID | Int Primary Key | - |
-| Invoice_Date | Varchar (20) | - |
-| Staff_ID  | Varchar (20) | Foreign Key |
-| Membership_ID  | Int | Foreign Key |
-| Location_ID  | Varchar (20) | Foreign Key |
-| Member_ID  | Varchar (20) | Foreign Key |
-| Member_FirstName  | Varchar (50) | Foreign Key |
-| Member_LastName  | Varchar (50) | Foreign Key |
-| Member_Email  | Varchar (100) | Foreign Key |
-| Confirmation_Number  | Varchar (50) | Foreign Key |
-| Payment_Status  | Varchar (20) | - |
-| Sales_Tax  | Decimal(10, 2) | - |
-| Total_Amount  | Decimal(10, 2) | - |
+| Invoice_ID | Int | The ID of the invoice. |
+| Invoice_Date | Varchar | The date the invoice was generated. |
+| Staff_ID  | Varchar | The ID of the staff that's associated with the invoice. |
+| Acount_ID  | Int | The ID of the account. |
+| Location_ID  | Int | The ID of the gym location. |
+| Member_ID  | Varchar | The ID of the gym member. |
+| Member_FirstName  | Varchar | The first name of the gym member. |
+| Member_LastName  | Varchar | The last name of the gym member. |
+| Member_Email  | Varchar | The email of the gym member. |
+| Confirmation_Number  | Varchar | The confirmation number of the payment. |
+| Payment_Status  | Varchar | The status of the payment: paid, in-process, not paid. |
+| Sales_Tax  | Decimal | - |
+| Total_Amount  | Decimal | - |
 
 ## Dimensions
 
 | Gym Member | Type | Description |
 | --- | --- | --- |
-| Member_ID | Varchar (20) Primary Key | some text here |
-| Member_Email | Varchar (100) | some text here |
-| Member_FirstName | Varchar (50) | some text here |
-| Member_LastName | Varchar (50) | some text here |
-| Phone_Number | Varchar (20) | some text here |
-| Street_Address | Varchar (100) | some text here |
-| City | Varchar (50) | some text here |
-| State | Varchar (20) | some text here |
-| Zip_Code | Varchar (10) | some text here | 
+| Member_ID | Varchar | - |
+| Member_Email | Varchar | - |
+| Member_FirstName | Varchar | - |
+| Member_LastName | Varchar | - |
+| Phone_Number | Varchar | - |
+| Street_Address | Varchar | - |
+| City | Varchar | - |
+| State | Varchar | - |
+| Zip_Code | Varchar | - | 
 
 | Gym | Type | Description |
 | --- | --- | --- |
-| Location_ID | Varchar (20) Primary Key | some text here |
-| Phone_Number | Varchar (20) | some text here |
-| Street_Address | Varchar (100) | some text here |
-| City | Varchar (50) | some text here |
-| State | Varchar (20) | some text here |
-| Zip_Code | Varchar (10) | some text here | 
+| Location_ID | Varchar | - |
+| Phone_Number | Varchar | -|
+| Street_Address | Varchar | - |
+| City | Varchar | - |
+| State | Varchar| - |
+| Zip_Code | Varchar| - | 
 
 | Membership | Type | Description |
 | --- | --- | --- |
-| Membership_ID | Varchar (20) Primary Key | some text here |
-| Membership_Type | Varchar (20) | some text here |
-| Start_Date | Varchar (100) | some text here |
-| End_Date | Varchar (50) | some text here |
-| Renewnal_Date | Varchar (20) | some text here |
-| Emergency_Contact | Varchar (50) | some text here | 
-| Signed_Waiver | Varchar (10) | some text here | 
+| Membership_ID | Varchar| The ID automatically generated for the new club memeber. |
+| Membership_Type | Varchar| The type of membership: Day Pass |
+| Start_Date | Varchar | The day the membership will start. |
+| End_Date | Varchar| The day the membership will end. |
+| Renewnal_Date | Varchar | The date the membership will get renewed. |
+| Emergency_Contact | Varchar | The emergency contact information. | 
+| Signed_Waiver | Varchar | The signed wavier. | 
 
 | Payment Information | Type | Description |
 | --- | --- | --- |
-| Confirmation_Number | Varchar (20) Primary Key | some text here |
-| First_Name | Varchar (20) | some text here |
-| Last_name | Varchar (100) | some text here |
-| Credit_Card_Number | Varchar (50) | some text here |
-| Exp_Date | Varchar (20) | some text here |
+| Confirmation_Number | Varchar | - |
+| First_Name | Varchar | - |
+| Last_name | Varchar | - |
+| Credit_Card_Number | Varchar | -|
+| Exp_Date | Date | - |
 
 | Staff | Type | Description |
 | --- | --- | --- |
-| Confirmation_ID | Varchar (20) Primary Key | some text here |
-| Staff_First_Name | Varchar (20) | some text here |
-| Staff_Last_name | Varchar (100) | some text here |
-| Staff_Email | Varchar (50) | some text here |
+| Staff_ID | Varchar | - |
+| Staff_First_Name | Varchar | - |
+| Staff_Last_name | Varchar | - |
+| Staff_Email | Varchar| - |
 
 
