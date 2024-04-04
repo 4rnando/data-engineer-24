@@ -1,0 +1,32 @@
+import csv
+import re 
+
+allData = []
+fields = ["type", "date", "details"]
+
+with open('Transactions.csv', mode='r') as file:
+    csvFile = csv.reader(file)
+    # Skip the header
+    next(csvFile, None)
+    for line in csvFile:
+        parts = line[0].split("|")  # Splitting each line by pipe as the delimiter
+        # Stripping the date to remove any surrounding quotes and extracting only the date part
+        date_only = parts[1].split(" ")[0].strip('"')
+        # Using regular expression to find the first number after "id": in the details field
+        details_id_match = re.search(r'"id":\s*(\d+)', parts[2])
+        details_id = details_id_match.group(1) if details_id_match else "N/A"  # Extracting the number or N/A if not found
+        newCol = {
+            "type": parts[0],
+            "date": date_only,  # The modified date without quotes
+            "details": details_id
+        }
+        allData.append(newCol)
+
+
+print(allData[:5])
+
+# Writing to a new CSV
+with open('updated_Transactions.csv', 'w', newline='') as csvfile:
+    writer = csv.DictWriter(csvfile, fieldnames=fields)
+    writer.writeheader()
+    writer.writerows(allData)
