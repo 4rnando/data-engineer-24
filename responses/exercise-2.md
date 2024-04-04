@@ -9,7 +9,7 @@ An overview of processes involved when an Invoice of a Membership Purchase has b
 | Invoice | Type | Description |
 | --- | --- | --- |
 | Invoice_ID | Int | The ID of the invoice. |
-| Invoice_Date | Varchar | The date the invoice was generated. |
+| Invoice_Date | Date | The date the invoice was generated. |
 | Staff_ID  | Varchar | The ID of the staff that's associated with the invoice. |
 | Acount_ID  | Int | The ID of the account. |
 | Location_ID  | Int | The ID of the gym location. |
@@ -38,7 +38,7 @@ An overview of processes involved when an Invoice of a Membership Purchase has b
 
 | Gym | Type | Description |
 | --- | --- | --- |
-| Location_ID | Varchar | - |
+| Location_ID | Int | - |
 | Phone_Number | Varchar | -|
 | Street_Address | Varchar | - |
 | City | Varchar | - |
