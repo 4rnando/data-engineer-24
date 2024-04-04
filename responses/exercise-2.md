@@ -47,13 +47,13 @@ An overview of processes involved when an Invoice of a Membership Purchase has b
 
 | Membership | Type | Description |
 | --- | --- | --- |
-| Membership_ID | Varchar| The ID automatically generated for the new club memeber. |
-| Membership_Type | Varchar| The type of membership: Day Pass |
-| Start_Date | Varchar | The day the membership will start. |
-| End_Date | Varchar| The day the membership will end. |
-| Renewnal_Date | Varchar | The date the membership will get renewed. |
-| Emergency_Contact | Varchar | The emergency contact information. | 
-| Signed_Waiver | Varchar | The signed wavier. | 
+| Membership_ID | Varchar| - |
+| Membership_Type | Varchar| - |
+| Start_Date | Varchar | - |
+| End_Date | Varchar| - |
+| Renewnal_Date | Varchar | - |
+| Emergency_Contact | Varchar | - | 
+| Signed_Waiver | Varchar | - | 
 
 | Payment Information | Type | Description |
 | --- | --- | --- |
