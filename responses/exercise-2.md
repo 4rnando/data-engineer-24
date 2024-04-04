@@ -45,7 +45,7 @@ An overview of processes involved when an Invoice of a Membership Purchase has b
 | State | Varchar| - |
 | Zip_Code | Varchar| - | 
 
-| Membership | Type | Description |
+| Account | Type | Description |
 | --- | --- | --- |
 | Membership_ID | Varchar| - |
 | Membership_Type | Varchar| - |
